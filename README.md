@@ -12,7 +12,7 @@ Install Python:
 
 pip install python
 
-Docker
+#### Docker
 Install Docker by following instructions at Docker's official site.
 
 Download the Files
