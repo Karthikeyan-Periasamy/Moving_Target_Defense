@@ -45,7 +45,7 @@ List running containers to find the container ID and port:
 ```
 docker ps
 ```
-Use the container port to enter the container:
+Use the container port to enter the running container:
 ```
 docker exec -it "container_id" /bin/bash
 ```
