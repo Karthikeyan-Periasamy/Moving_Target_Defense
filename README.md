@@ -1,6 +1,6 @@
 # Moving Target Defense
 
-A project implementing Moving Target Defense (MTD) strategies using Docker and Python to enhance network security. This setup allows for dynamic IP changing, simulating an environment with improved resilience against attacks.
+A project implementing Moving Target Defense (MTD) strategies using Docker and Python to enhance network security.
 
 ## Installation
 
@@ -17,12 +17,14 @@ Install Docker by following instructions at Docker's official site.
 
 Download the Files
 
-cd <file path> 
-
 Open a terminal and navigate to the folder containing the files.
 
-Docker Setup
+use command to navigate to the file "cd <file_path>"
+
+#### Docker Setup
+
 Build the Docker Image
+
 Run the following command to build the Docker image:
 ```
 docker build -t "your_image_name" . 
@@ -32,6 +34,7 @@ Verify the image build:
 docker images
 ```
 Run the Docker Image
+
 To start the Docker container, use:
 ```
 docker run "your_image_name"
@@ -41,6 +44,7 @@ If the above command doesn’t work, try running it with elevated privileges:
 docker run --privileged -it "your_image_name"
 ```
 Access the Running Container
+
 Open another terminal.
 
 List running containers to find the container ID and port:
@@ -60,7 +64,9 @@ you can see the MTD.py file.
 come back again using command [cd] to the rrot
 
 Check IP Changing
+
 To verify IP changes within the container:
+
 we need to still inside the container port, use:
 ```
 ip addr
