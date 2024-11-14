@@ -16,7 +16,9 @@ pip install python
 Install Docker by following instructions at Docker's official site.
 
 Download the Files
+
 Clone or download this repository.
+
 Open a terminal and navigate to the folder containing the files.
 
 Docker Setup
