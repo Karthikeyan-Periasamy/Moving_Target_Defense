@@ -9,9 +9,69 @@ Ensure you have **Python** and **Docker** installed.
 
 #### Python
 Install Python:
-
+```bash
 pip install python
+Docker
+Install Docker by following instructions at Docker's official site.
 
+Download the Files
+Clone or download this repository.
+Open a terminal and navigate to the folder containing the files.
+Docker Setup
+Build the Docker Image
+Run the following command to build the Docker image:
+
+bash
+Copy code
+docker build -t "your_image_name" .
+Verify the image build:
+
+bash
+Copy code
+docker images
+Run the Docker Image
+To start the Docker container, use:
+
+bash
+Copy code
+docker run "your_image_name"
+If the above command doesn’t work, try running it with elevated privileges:
+
+bash
+Copy code
+docker run --privileged -it "your_image_name"
+Access the Running Container
+Open another terminal.
+
+List running containers to find the container ID and port:
+
+bash
+Copy code
+docker ps
+Use the container port to enter the container:
+
+bash
+Copy code
+docker exec -it "container_id" /bin/bash
+Once inside, you can check for files with:
+
+bash
+Copy code
+ls
+Look for the MTD.py file.
+
+Check IP Changing
+To verify IP changes within the container:
+
+While still inside the container, use:
+bash
+Copy code
+ip addr
+or
+bash
+Copy code
+ifconfig
+This will display IP information and confirm that IP changes are occurring as expected with MTD.
 
 # Moving_Target_Defense
 
