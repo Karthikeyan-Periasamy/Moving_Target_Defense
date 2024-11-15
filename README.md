@@ -67,7 +67,7 @@ Check IP Changing
 
 To verify IP changes within the container:
 
-we need to still inside the container port, use:
+we need to stay inside the container port on the terminal, use:
 ```
 ip addr
 ```
