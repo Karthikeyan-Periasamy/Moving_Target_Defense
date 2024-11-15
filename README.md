@@ -78,12 +78,14 @@ ifconfig
 This will display IP information and confirm that IP changes are occurring as expected with MTD.
 
 Testing: 
+#### DDOS attack
 open another Terminal and get into the runing conatiner and use ping command to see the ip changing
 ```
 ping <ip address> -s 6500
 ```
-install nmap 
-and get into the nmap locationa and open a terminal where nmap is setup in the system and try for it otherwise it will give error
+####  Reconnaissance attack
+
+install nmap and get into the nmap locationa and open a terminal where nmap is setup in the system and try for it otherwise it will give error
 try to scan using nmap and see the result 
 ```
 nmap <ip address> 
