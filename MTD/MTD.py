@@ -7,7 +7,7 @@ import subprocess
 import random
 import re
 
-# ThreatDetection class from threat_detection.py
+# ThreatDetection
 class ThreatDetection:
     def __init__(self, packet_threshold=100):
         self.packet_threshold = packet_threshold
@@ -46,7 +46,7 @@ class ThreatDetection:
             time.sleep(check_interval)
 
 
-# IPShuffler class from ip_shuffler.py
+# IPShuffler 
 class IPShuffler:
     def __init__(self, mask, interface):
         self.interface = interface
@@ -110,7 +110,7 @@ class IPShuffler:
             print("IPShuffler - perform_ip_change: IP address conflict during change")
 
 
-# Main function to run the MTD system (from main.py)
+# Main function to run the MTD system 
 def main(interface, mask, changeIpPeriod, threshold):
     shuffler = IPShuffler(mask, interface)
     detector = ThreatDetection(threshold)
