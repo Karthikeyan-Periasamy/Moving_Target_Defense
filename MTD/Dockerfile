@@ -11,7 +11,6 @@ WORKDIR /app
 COPY MTD.py /app/MTD.py
 
 # Install any Python dependencies if required
-# RUN pip3 install -r requirements.txt   # Uncomment if you have requirements
 
 # Specify the entry point to run the main script
 CMD ["python3", "MTD.py"]
